@@ -1,6 +1,15 @@
 \documentclass{ximera}
 \title{Overview of Ximera}
 %\outcome{Understand what Ximera is and how it can be used}
+
+
+\newcommand{\button}[1]%
+{   \begin{tikzpicture}[baseline=(tempname.base)]
+        \node[draw=gray, fill=yellow!5, rounded corners=0.5pt, inner sep=2pt, minimum width=1.5em, minimum height=1.5em, general shadow={fill=gray!50, shadow xshift=0.5pt, shadow yshift=-0.5pt, shadow scale=1.15}] (tempname) {#1};
+    \end{tikzpicture}
+}
+
+
 \begin{document}
 
 %\begin{abstract}
@@ -9,7 +18,7 @@
 \maketitle
 
 \begin{flushright}
-\link[\sf Next Activity]{http://497a6980.ngrok.com/course/hgpark21/gettingStarted2/master/gettingstarted2}
+\link[\button{\sf Next Activity}]{http://497a6980.ngrok.com/course/hgpark21/gettingStarted2/master/gettingstarted2}
 %%%% Chage the link later %%%%%
 \end{flushright}
 
