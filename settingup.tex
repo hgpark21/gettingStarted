@@ -10,11 +10,11 @@ Instructions for setting up a repository containing course materials.
 \maketitle
 
 This tutorial is intended to help course instructors get a
-\href{http://ximera.osu.edu}{\sf Ximera} 
+\link[\sf Ximera]{http://ximera.osu.edu} 
 course up and running. It guides the reader through the creation of a
-\href{http://git-scm.com}{\sf git}
+\link[\sf git]{http://git-scm.com}
 repository, the connection of the repository to
-\href{http://github.com}{\tt github.com}
+\link[\tt github.com]{http://github.com}
 through a webhook, and the creation of an activity containing a 
 simple exercise.
 
@@ -24,14 +24,14 @@ Similar instructions for Windows users will be composed
 at a later stage, but the Linux instructions below will probably
 be sufficient for Windows users with some familiarity with Unix commands.
 While the reader could in principle avoid installing 
-\href{http://texlive.org}{\LaTeX}\ and
-\href{http://git-scm.com}{\sf git} these programs are necessary
+\link[\LaTeX]{http://texlive.org}\ and
+\link[\sf git]{http://git-scm.com} these programs are necessary
 to take full advantage of the features of the 
-\href{http://ximera.osu.edu}{\sf Ximera} system.
+\link[\sf Ximera]{http://ximera.osu.edu} system.
 
 \begin{warning} Currently {\em anyone} can
 create a course on the webserver
-\href{http://ximera.osu.edu}{\tt ximera.osu.edu}.
+\link[\sf Ximera]{http://ximera.osu.edu}.
 This is to say that if you follow the instructions below,
 a new course that {\em you} control will appear on the web,
 visible to all the world. It goes without saying therefore that
@@ -42,7 +42,7 @@ more robust course validation mechanism will be implemented.
 
 \subsection{Setting up a Ximera repository from scratch}
 This section describes how to create a course from scratch.
-In \autoref{ForkClone} we will discuss other ways to create
+In \link[Alternative Way]{} we will discuss other ways to create
 courses, such as forking existing courses.
 \begin{enumerate}
 \item\label{Mkdir} Create a directory for your course files
@@ -57,7 +57,7 @@ cd anExampleCourse
 \end{verbatim}
 \end{center}
 
-\item A \href{http://ximera.osu.edu}{\sf Ximera} 
+\item A \link[\sf Ximera]{http://ximera.osu.edu} 
 course consists of a directory (the one
 created above in this example)
 containing a text file called \verb!course.xim!. 
@@ -74,6 +74,7 @@ description: This is a Ximera activity explaining how to get started with Ximera
 
 theFirstActivity/theFirstActivity
 \end{verbatim}
+
 \begin{warning}
 The content of the line beginning with \verb!name:!
 specifies the title of your course exactly as it will appear on
@@ -173,7 +174,7 @@ a title and an abstract, but is otherwise blank.
 \end{remark}
 
 \item\label{GithubCreate}
-Log into your \href{http://github.com}{\tt github.com}
+Log into your \link[\tt github.com]{http://github.com}
 account and create a repository with the name
 \verb!anExampleCourse!
 by clicking the \verb!+! by your account name, as shown
@@ -191,7 +192,7 @@ accept all the default settings by pressing the green
 \begin{image}
 \includegraphics[scale=.3]{CreateRepo.png}
 \end{image}
-\href{http://github.com}{\tt github.com}
+\link[\tt github.com]{http://github.com}
 will respond by printing additional commands similar to
 those shown below.
 \begin{verbatim}
@@ -211,13 +212,13 @@ from the previous step you can change to its parent directory by typing
 cd ..
 \end{verbatim}
 Now execute the commands returned by
-\href{http://github.com}{\tt github.com}.
+\link[\tt github.com]{http://github.com}.
 
 \begin{remark}
 Note that your username appears in the fifth line
 of these commands in place of \verb!marcusjbishop!.
 Note also the \verb!s! in \verb!https!.
-These commands initialize the repository on \href{http://github.com}{\tt github.com}
+These commands initialize the repository on \link[\tt github.com]{http://github.com}
 and create an empty file named \verb!README.md!
 in the \verb!anExampleCourse! directory.
 \end{remark}
@@ -243,13 +244,13 @@ description of your course in the file
 
 \begin{remark}
 The content of \verb!README.md! will appear only on
-\href{http://github.com}{\tt github.com}.
+\link[\tt github.com]{http://github.com}.
 This file is meant to provide a description of your project
 to other developers.
 \end{remark}
 
 \item Click the \verb!Settings! button on your
-\href{http://github.com}{\tt github.com} repository page
+\link[\tt github.com]{http://github.com} repository page
 and then on \verb!Webhooks & Services!.
 Now click the \verb!Add webhook! button.
 Type \verb!http://ximera.osu.edu/github!
@@ -312,12 +313,12 @@ If not, see the {\sf Troubleshooting} activity in this tutorial
 or send your questions to
 \href{mailto:ximera@math.osu.edu}{\tt ximera@math.osu.edu}.
 \begin{remark} The commands above inform 
-\href{http://git-scm.com}{\sf git} that
+\link[\sf git]{http://git-scm.com} that
 changes have been made to your repository and 
 communicates them to
-\href{http://github.com}{\tt github.com}
+\link[\tt github.com]{http://github.com}
 which in turn communicates them to
-\href{http://ximera.osu.edu}{\tt ximera.osu.edu}.
+\link[\sf Ximera]{http://ximera.osu.edu}.
 You should execute similar commands whenever you
 change files in your repository.
 \end{remark}
@@ -325,13 +326,13 @@ change files in your repository.
 
 \subsection{Creating further activities}
 From here you can create further 
-\href{http://ximera.osu.edu}{\sf Ximera} 
+\link[\sf Ximera]{http://ximera.osu.edu} 
 activities as in step~\autoref{FirstExercise}.
 You should issue a \verb!git add! command after creating
 a new file or directory and a \verb!git commit!
 command followed by a \verb!git push! command
 periodically to transmit your most recent changes to
-\href{http://github.com}{\tt github.com}.
+\link[\tt github.com]{http://github.com}.
 You should also add the name of your activity file without
 its \verb!.tex! extension to the file \verb!course.xim!
 it the position relative to other activities where
@@ -348,36 +349,36 @@ in any case for finding and correcting mistakes.
 
 \subsection{Other ways to set up a Ximera repository}\label{ForkClone}
 There are other ways to create a
-\href{http://ximera.osu.edu}{\sf Ximera} course.
+\link[\sf Ximera]{http://ximera.osu.edu} course.
 One possibility is to begin by creating the repository on
-\href{http://github.com}{\tt github.com}
+\link[\tt github.com]{http://github.com}
 as in step~\autoref{GithubCreate} above.
 Then instead of executing the commands
 that follow to initialize the local copy of the repository,
 you could {\em clone} the copy on 
-\href{http://github.com}{\tt github.com} using a
+\link[\tt github.com]{http://github.com} using a
 \verb!git clone! command.
 Alternately you could {\em fork} an existing repository,
 either your own or someone else's.
 See the \href{http://git-scm.com}{{\sf git} manual}
 for more information about the \verb!clone! and \verb!fork! commands.
 Both possibilities above obviate step \autoref{Mkdir} since cloning
-or forking a \href{http://git-scm.com}{\sf git} repository
+or forking a \link[\sf git]{http://git-scm.com} repository
 creates a local directory and initializes
-it as a \href{http://git-scm.com}{\sf git} repository.
+it as a \link[\sf git]{http://git-scm.com} repository.
 
 Still another possibility is to create and edit {\em all} files
 and directories directly on the
-\href{http://github.com}{\tt github.com} web site.
+\link[\tt github.com]{http://github.com} web site.
 In this way you could produce an entire
-\href{http://ximera.osu.edu}{\sf Ximera} 
+\link[\sf Ximera]{http://ximera.osu.edu} 
 course {\em without} a local copy of the repository.
 This would have the advantage of not requiring the
 instructor to install the
-\href{http://git-scm.com}{\sf git} or
-\href{http://texlive.org}{\LaTeX}\ software
+\link[\sf git]{http://git-scm.com}or
+\link[\LaTeX]{http://texlive.org}\ software
 or to learn any of the
-\href{http://git-scm.com}{\sf git} or Unix
+\link[\sf git]{http://git-scm.com}or Unix
 commands above. This could be useful when working temporarily on
 someone else's computer, for example.
 
