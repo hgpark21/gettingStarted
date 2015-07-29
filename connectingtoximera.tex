@@ -12,17 +12,16 @@
 
 This activity guides you to connect your \textbf{GitHub} repository to the \textbf{Ximera server}.
 
-\begin{itemize}
+\begin{enumerate}
 
-\item\textbf{Step 1.} Go to \link[\sf Ximera]{http://ximera.osu.edu} and sign in with your Google account.
+\item Go to \link[\sf Ximera]{http://ximera.osu.edu} and sign in with your Google account.
 
-\item\textbf{Step 2.} Connect \textbf{Ximera} to your \textbf{GitHub}: 
+\item In order to connect \textbf{Ximera} to your \textbf{GitHub}: 
 Click first your username at the top right corner and in the dropdown menu click \textbf{Profile} 
 and then \textbf{Connect GitHub} at the bottom of the page.
 
-\item\textbf{Step 3.} 
- Click \textbf{Settings} botton on your \texttt{github.com} repository and then \textbf{Webhooks \& Services}. 
- Click the \textbf{Add webhook} botton and  continue by confirming with your password. 
+\item Click \textbf{Settings} botton on your \texttt{github.com} repository and then \textbf{Webhooks \& Services}. 
+ Click the \textbf{Add webhook} botton and continue by confirming with your password. 
  At the \textbf{Webhooks/Add webhook} page, type \texttt{http://497a6980.ngrok.com/github} in the \textbf{Payload URL} field 
  and \texttt{8mi0tsrje9n3asPu86XC198G1XSdZj} into the \textbf{Secret} field. Finally push the green Add webhook button at the bottom of the window.
 
@@ -32,7 +31,6 @@ Call this file ``\texttt{hello.tex}." Copy the following text into your new docu
 
 \begin{verbatim}
 \documentclass{ximera}
-
 \begin{document}
 \title{Hello World!}
 \begin{abstract}
@@ -44,26 +42,25 @@ This is a basic ximera example.
 What is the airspeed velocity of an unladen swallow? $\answer{3}$
 \end{question}
 \end{document}
-
 \end{verbatim}
 
-\item\textbf{Step 5.} Saving your work in the GitHub repository is called \textbf{committing}; 
+\item Saving your work in the GitHub repository is called \textbf{committing};  
 after pasting the above code, scroll down and click the \textbf{Commit new file} button.
 
-\item\textbf{Step 6.} Saving your work in the GitHub repository is called \textbf{committing}. 
+\item Saving your work in the GitHub repository is called \textbf{committing}. 
 Click on the word ``branch" (or ``branches"). 
 In the master branch row you should see either a yellow circle or a green checkmark. 
 \textcolor{yellow}{Yellow} means that ximera has received your tex document and is processing it; 
 \textcolor{green}{green} means it is done. 
 A \textcolor{red}{red X} here means there is a problem; see Troubleshooting for info.
 
-\item\textbf{Step 7.} Once you see the green checkmark in the branch listing, 
+\item Once you see the green checkmark in the branch listing, 
 you can view your document at \texttt{http://497a6980.ngrok.com/course/USERNAME/REPONAME/master/filename}, 
 where USERNAME and REPONAME are the names you took note of earlier.
 (Note. By adding ``.tex" to the URL above you can view the tex source and see a compilation log; 
 this is useful in case there is a problem.)
 
-\end{itemize}
+\end{enumerate}
 
 Congratulations! You have successfully create a \textbf{Ximera activity}. 
 
